@@ -33,6 +33,7 @@ function wp_set_current_user($id, $name = '') {
 
 	setup_userdata( $current_user->ID );
 
+        
 	/**
 	 * Fires after the current user is set.
 	 *
