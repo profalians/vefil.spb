@@ -712,6 +712,13 @@ case 'register' :
 ?>
 
 <form name="registerform" id="registerform" action="<?php echo esc_url( site_url('wp-login.php?action=register', 'login_post') ); ?>" method="post" novalidate="novalidate">
+
+	<p>
+		<label for="user_login">”никальный ник<br />
+		<input type="text" name="user_nick" id="user_nick" class="input" value="<?php echo esc_attr(wp_unslash($user_nick)); ?>" size="20" /></label>
+	</p>
+	
+
 	<p>
 		<label for="user_login"><?php _e('Username') ?><br />
 		<input type="text" name="user_login" id="user_login" class="input" value="<?php echo esc_attr(wp_unslash($user_login)); ?>" size="20" /></label>
